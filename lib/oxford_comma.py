@@ -1,3 +1,5 @@
+items=["a","b","c","d","e"]
+
 def oxford_comma(items):
     if len(items) == 1:
         return items[0]
@@ -5,4 +7,5 @@ def oxford_comma(items):
         return " and ".join(items)
     else:
         return ", ".join(items[:-1]) + f", and {items[-1]}"
-    
+
+print(oxford_comma(items))
